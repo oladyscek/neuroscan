@@ -1,0 +1,13 @@
+.git
+.gitignore
+*.db
+*.db-journal
+data/
+static/*.map
+Dockerfile
+.dockerignore
+docker-compose.yml
+Caddyfile
+README.md
+.vscode
+.idea

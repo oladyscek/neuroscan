@@ -1,0 +1,4 @@
+neuroscan10.duckdns.org {
+    encode zstd gzip
+    reverse_proxy app:8080
+}
