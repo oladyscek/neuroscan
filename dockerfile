@@ -1,5 +1,5 @@
 # ---------- builder ----------
-FROM golang:1.26.1-alpine AS builder
+FROM golang:1.26.3-alpine AS builder
 WORKDIR /app
 
 # Сначала только go.mod/go.sum — чтобы кэшировался слой с зависимостями
