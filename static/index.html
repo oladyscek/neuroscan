@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="light">
+<html lang="ru" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -531,9 +531,10 @@
   .is-sending .field:nth-child(2){transition-delay:.08s}
   .is-sending .field:nth-child(3){transition-delay:.14s}
   .is-sending .field:nth-child(4){transition-delay:.20s}
-  .is-sending .check{transition-delay:.26s}
-  .is-sending .btn[type="submit"]{transition-delay:.32s}
-  .is-sending .form-note{transition-delay:.36s}
+  .is-sending .field:nth-child(5){transition-delay:.26s}
+  .is-sending .check{transition-delay:.32s}
+  .is-sending .btn[type="submit"]{transition-delay:.38s}
+  .is-sending .form-note{transition-delay:.44s}
   .is-sending form .field,
   .is-sending form .check,
   .is-sending form .btn[type="submit"],
@@ -1067,10 +1068,6 @@
 </head>
 <body id="top">
 
-<!-- ============================================================
-     Общие SVG defs: нейтральный «КТ-снимок»
-     Средние серые тона — одинаково читается на светлой и тёмной теме
-     ============================================================ -->
 <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
     <radialGradient id="ct-vignette" cx="50%" cy="50%" r="65%">
@@ -1168,7 +1165,6 @@
   </nav>
 </header>
 
-<!-- ============ HERO ============ -->
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
@@ -1294,39 +1290,36 @@
   </div>
 </section>
 
-<!-- ============ ПРОБЛЕМА ============ -->
 <section class="section section-alt" id="problem">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Проблема</p>
       <h2>Один рентгенолог в райцентре закрывает смену за троих</h2>
       <p class="lead">
-        Дело не в квалификации. Дело в потоке, усталости и цене ошибки.
-        Ниже — то, что чаще всего называют главной болью главные врачи.
+        Рентгенологам не хватает времени на детальный разбор каждого снимка. Высокий поток пациентов и усталость приводят к ошибкам и задержкам.
       </p>
     </div>
 
     <div class="grid-3">
       <div class="card">
         <span class="idx">01</span>
-        <h3>100 снимков за смену</h3>
-        <p>К вечеру глаз «замыливается». Мелкие новообразования в лёгких и микротрещины видно на первых секундах просмотра, а не на сотом снимке.</p>
+        <h3>Высокая нагрузка</h3>
+        <p>До 100 исследований за смену. К концу дня снижается концентрация, а мелкие патологии требуют особого внимания.</p>
       </div>
       <div class="card">
         <span class="idx">02</span>
-        <h3>Очередь на описание</h3>
-        <p>В регионах пациент ждёт заключения 2–3 дня. Для онкологии это критичные дни, а для клиники — потерянная пропускная способность.</p>
+        <h3>Долгое ожидание</h3>
+        <p>Пациенты в регионах ждут описания по 2–3 дня. Для онкологии это критично, для клиники — простой в работе.</p>
       </div>
       <div class="card">
         <span class="idx">03</span>
-        <h3>Кадров не хватает</h3>
-        <p>Специалисты уезжают, нагрузка на оставшихся растёт. Отделение работает на пределе, а запись на исследование растягивается на недели.</p>
+        <h3>Дефицит кадров</h3>
+        <p>Врачи уезжают, нагрузка на оставшихся растет. Запись на исследования растягивается на недели.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ РЕШЕНИЕ + СРАВНЕНИЕ ============ -->
 <section class="section">
   <div class="container">
     <div class="split">
@@ -1375,7 +1368,6 @@
   </div>
 </section>
 
-<!-- ============ КАК РАБОТАЕТ ============ -->
 <section class="section section-alt" id="how">
   <div class="container">
     <div class="section-head">
@@ -1461,10 +1453,10 @@
           </div>
           <div class="mock-pane mock-pane--ai">
             <div>
-              <div class="mock-label">Модель</div>
-              <div class="mock-row"><span>Версия</span><b>NS-3.2</b></div>
-              <div class="mock-row"><span>База</span><b>5 000 000+</b></div>
-              <div class="mock-row"><span>Скорость</span><b>~30 сек</b></div>
+              <div class="mock-label">Параметры КТ</div>
+              <div class="mock-row"><span>Срез</span><b>45 / 182</b></div>
+              <div class="mock-row"><span>Толщина</span><b>1.0 мм</b></div>
+              <div class="mock-row"><span>Окно</span><b>Лёгочное</b></div>
             </div>
             <div class="mock-steps">
               <div class="mock-step is-done"><span></span>Снимок загружен</div>
@@ -1533,39 +1525,37 @@
   </div>
 </section>
 
-<!-- ============ ДОВЕРИЕ ============ -->
 <section class="section" id="trust">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Точность и безопасность</p>
       <h2>Почему этому можно доверять</h2>
       <p class="lead">
-        В медицине недоверие к ИИ — нормальная реакция. Поэтому мы отвечаем не словами, а документами и цифрами.
+        Применение ИИ в клинической практике требует доказанной точности и защиты данных. Вот ключевые факты о безопасности и эффективности NeuroScan.
       </p>
     </div>
 
     <div class="grid-2">
       <div class="card">
-        <h3>Точность подтверждена испытаниями</h3>
-        <p>Чувствительность алгоритма — 94,8%, специфичность — 92,1%. Показатели получены по результатам клинических испытаний на базе многопрофильного стационара (данные предоставляются по запросу).</p>
+        <h3>Клинически подтвержденная точность</h3>
+        <p>Чувствительность 94,8%, специфичность 92,1%. Результаты подтверждены исследованиями и валидацией на базе профильных стационаров.</p>
       </div>
       <div class="card">
-        <h3>Данные пациентов защищены</h3>
-        <p>Снимки обезличиваются до отправки в облако. Соответствие ФЗ-152, закрытый контур VPN, серверы на территории России. Персональные данные не покидают контур.</p>
+        <h3>Безопасность данных</h3>
+        <p>Снимки обезличиваются до отправки. Полное соответствие 152-ФЗ, защищенные каналы связи и серверы в РФ.</p>
       </div>
       <div class="card">
-        <h3>Это медицинское изделие</h3>
-        <p>Есть регистрационное удостоверение Росздравнадзора. NeuroScan — не эксперимент, а допущенный к применению продукт с понятной ответственностью.</p>
+        <h3>Медицинское изделие</h3>
+        <p>Имеется регистрационное удостоверение Росздравнадзора. Продукт готов к легальному применению в клинической практике.</p>
       </div>
       <div class="card">
-        <h3>Понятно, откуда данные для обучения</h3>
-        <p>Датасет размечен практикующими врачами-рентгенологами и проверен независимой экспертизой. Модель можно дообучить на ваших случаях — только с согласия клиники.</p>
+        <h3>Экспертная разметка</h3>
+        <p>Датасеты подготовлены практикующими рентгенологами. Возможна адаптация модели под протоколы вашей клиники.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ КОМАНДА ============ -->
 <section class="section section-alt" id="team">
   <div class="container">
     <div class="section-head">
@@ -1594,15 +1584,13 @@
   </div>
 </section>
 
-<!-- ============ ЭКОНОМИКА + КАЛЬКУЛЯТОР ============ -->
 <section class="section" id="economy">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Экономика</p>
       <h2>Что это даёт клинике в цифрах</h2>
       <p class="lead">
-        Главному врачу важен не искусственный интеллект, а очередь, выручка и отсутствие претензий.
-        Поэтому считаем именно в этих категориях.
+        Внедрение должно окупаться и решать задачи отделения. Вот как это отражается на ключевых показателях клиники.
       </p>
     </div>
 
@@ -1673,7 +1661,6 @@
   </div>
 </section>
 
-<!-- ============ КЕЙС ============ -->
 <section class="section section-alt">
   <div class="container">
     <div class="section-head">
@@ -1692,7 +1679,7 @@
         <cite>Заведующий отделением лучевой диагностики, сеть клиник</cite>
 
         <div class="case-actions">
-          <a class="btn btn-primary" href="#demo" data-track="cta_case">Хочу так же — запросить демо</a>
+          <a class="btn btn-primary" href="#demo" data-track="cta_case">Запросить демо</a>
         </div>
       </div>
       <div class="ph">Место для видеоотзыва или фото спикера</div>
@@ -1700,12 +1687,11 @@
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
 <section class="section" id="faq">
   <div class="container">
     <div class="section-head" style="margin-left:auto;margin-right:auto;text-align:center">
       <p class="eyebrow">Вопросы и ответы</p>
-      <h2>Что часто спрашивают главные врачи</h2>
+      <h2>Часто задаваемые вопросы</h2>
     </div>
 
     <div class="faq-list">
@@ -1737,7 +1723,6 @@
   </div>
 </section>
 
-<!-- ============ ДЕМО / ЛИД-ФОРМА ============ -->
 <section class="section section-alt" id="demo">
   <div class="container">
     <div class="split">
@@ -1769,8 +1754,13 @@
           </div>
 
           <div class="field">
-            <label for="f-clinic">Клиника и должность</label>
-            <input id="f-clinic" name="clinic" type="text" placeholder="Например: ГКБ №1, заведующий отделением" autocomplete="organization" required>
+            <label for="f-clinic">Клиника</label>
+            <input id="f-clinic" name="clinic" type="text" placeholder="Например: ГКБ №1" autocomplete="organization" required>
+          </div>
+
+          <div class="field">
+            <label for="f-job">Должность</label>
+            <input id="f-job" name="jobTitle" type="text" placeholder="Например: Заведующий отделением" autocomplete="organization-title" required>
           </div>
 
           <div class="field">
@@ -1812,7 +1802,6 @@
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
@@ -1848,7 +1837,8 @@
 (function () {
   "use strict";
 
-  var USE_BACKEND = false;
+  // ВКЛЮЧАЕМ БЭКЕНД
+  var USE_BACKEND = true; 
   var LEAD_ENDPOINT = "/api/lead";
   var MOCK_DELAY = 1100;
 
@@ -2126,21 +2116,29 @@
 
   function sendLead(payload) {
     if (!USE_BACKEND) {
+      // Мок-режим для локальной верстки
       return new Promise(function (resolve) { setTimeout(resolve, MOCK_DELAY); });
     }
+    
+    // Реальный запрос к Go-серверу
     return fetch(LEAD_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
     }).then(function (response) {
       if (!response.ok) throw new Error('HTTP ' + response.status);
-      return response.json().catch(function () { return {}; });
+      // Go возвращает 201 Created без тела, поэтому response.json() упадёт.
+      // Возвращаем пустой объект, если тела нет.
+      return response.text().then(function(text) {
+        return text ? JSON.parse(text) : {};
+      });
     });
   }
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
+    // Защита от спама
     if (honeypot && honeypot.value) { return; }
     if (Date.now() - formStartTime < 1500) { return; }
 
@@ -2155,16 +2153,21 @@
       return;
     }
     setLoading(true);
+    
+    // Собираем JSON под структуру Go: Name, Phone, Clinic, JobTitle, Email
     var payload = {
       name: document.getElementById('f-name').value.trim(),
       phone: phone.value,
       clinic: document.getElementById('f-clinic').value.trim(),
+      jobTitle: document.getElementById('f-job').value.trim(), // добавили jobTitle
       email: document.getElementById('f-email').value.trim()
     };
+    
     track('form_submit');
     sendLead(payload)
       .then(showSuccess)
-      .catch(function () {
+      .catch(function (error) {
+        console.error(error);
         showError('Не удалось отправить. Проверьте связь и попробуйте ещё раз.');
       });
   });
